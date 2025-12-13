@@ -1,0 +1,279 @@
+/*-------------------------------------------------------------------------------------------*/
+/*-----------------------------------------HEADER--------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: linear-gradient(135deg, #1a0000, #3d0000, #121212);
+    min-height: 100vh;
+}
+
+#glava{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 10vh;
+    margin: 0 auto;
+    background: linear-gradient(90deg,#1a0000cc,#3d0000cc,#121212cc);
+    color: #f5f5f5;
+    font-weight: bolder;
+    border-bottom: 2px solid #000000;
+    margin-bottom: 20px;
+    backdrop-filter: blur(8px);
+}
+
+#glava_dropdown{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1800px;
+}
+
+#nav_1, #nav_2, #nav_3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#nav_2{
+    flex-direction: column;
+}
+
+#nav_2 span{
+    display: flex;
+    gap: 10px;    
+}
+
+#glava ul li a{
+    gap: 20px;
+    text-decoration: none;
+}
+
+#glava h1{
+  font-size: clamp(1.2rem, 4vw, 2.2rem);
+}
+
+#glava p, #glava a{
+  font-size: clamp(0.7rem, 1.8vw, 1rem);
+}
+
+.glava_gumb{
+    background-color: rgba(0,0,0,0.6);
+    padding: 10px;
+    border-radius: 15px;
+    transition: 0.4s ease-in-out;
+    color: #f5f5f5;
+}
+
+.glava_gumb:hover{
+    box-shadow: 0 0 20px #f5f5f5;
+    color: #000000;
+    background-color: #f5f5f5;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+/*-----------------------------------------MAIN----------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+
+#glava_vsebine{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8%;
+}
+
+#Tabela{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    gap:0.5rem;
+    background-color: rgba(0,0,0,0.4);
+    padding: 3%;
+    border-radius: 10px;
+    box-shadow: 0 0 50px #000000;
+    color: #f5f5f5;
+    font-weight: bolder;
+    transition: 0.6s ease-in-out;
+}
+
+#Tabela:hover{
+    border-radius: 25px;
+}
+
+#slogan{
+    background-image: url(Logo_slike/slogan.png);
+    aspect-ratio: 16/9;
+    background-position:center;
+    background-size:cover;
+    width: 40%;
+    min-width: 250px;
+    max-width: 600px;
+    transition: 0.6s ease-in-out;
+}
+
+#slogan:hover{
+    background-image: url(Logo_slike/slogan_2.png);
+}
+
+#list{
+    list-style: none;
+}
+
+#list li{
+    font-size:clamp(0.9rem,2vw,1.2rem);
+    margin-left:1rem;
+}
+
+#dobrodošli{
+    font-size:clamp(1.4rem,3vw,2.2rem);
+}
+
+#video_section{
+    margin-top: 50px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(slike/1761388162029.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#art_header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: rgba(0,0,0,0.8);
+    color: #f5f5f5;
+    padding: 50px;
+    font-size:clamp(0.9rem,2vw,1.2rem);
+    font-weight: bolder;
+    width: 75%;
+    min-width: 100px;
+    max-width: 900px;
+    border-radius: 25px;
+    border: 2px solid #000000;
+    margin: 20px auto 25px;
+}
+
+#art_header:hover{
+    box-shadow: 0 0 50px #000000;
+    transition: 0.4s ease-in-out;
+}
+
+.trailer{
+    width: 80%;
+    min-width: 250px;
+    max-width: 600px;
+}
+
+#video_trailer{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#video_trailer_1, #video_trailer_2{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+/*-----------------------------------------FOOTER--------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+
+#noga{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    font-size:clamp(0.9rem,2vw,1.2rem);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #f5f5f5;
+    border-top: 2px solid #000000;
+}
+
+.copy{
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.copy:hover{
+    text-shadow: 0 0 30px #f5f5f5;
+}
+
+@media (max-width: 600px){
+  #glava{
+    height: 7vh;
+    padding: 4px;
+  }
+
+  #Logo{
+    width: 55px;
+  }
+
+  #glava p,
+  #glava a,
+  .glava_gumb{
+    font-size: 0.65rem !important;
+    padding: 4px 6px;
+  }
+}
+
+@media (max-width: 600px){
+  #glava_vsebine{
+    flex-direction: column;
+    gap: 16px;
+    padding: 0 10px;
+  }
+
+  #slogan{
+    width: 90%;
+    max-width: 400px;
+  }
+
+  #Tabela{
+    width: 90%;
+    padding: 16px;
+  }
+
+  #dobrodošli{ font-size: 1.1rem; }
+  #list li{ font-size: 0.8rem; }
+}
+
+@media (max-width: 600px){
+
+  #art_header{
+    width: 90%;
+    max-width: 500px;
+    padding: 20px;
+    gap: 6px;
+    font-size: 0.85rem;
+  }
+
+  #art_header h2{
+    font-size: 1.1rem;
+  }
+
+  .trailer{
+    width: 95%;
+  }
+}
