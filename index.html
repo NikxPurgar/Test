@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="sl">
+    <head>
+        <meta charset="UTF-8">
+        <title>MyVibe</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="Logo_slike/My_Vibe.png">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header id="glava">
+               <ul id="glava_dropdown">
+                    <li id="nav_1">
+                        <img src="Logo_slike/My_Vibe.png" id="Logo" width="100px">
+                    </li>
+                    <li id="nav_2">
+                        <p>Jezik/Language:</p>
+                        <span>
+                            <a href="#" class="glava_gumb">Slovenščina</a>
+                            <a href="#" class="glava_gumb">Angleščina</a>
+                        </span>
+                    </li>
+                    <li id="nav_3">
+                        <a href="#" class="glava_gumb">Registracija</a>
+                        <a href="#" class="glava_gumb">Prijava</a>
+                    </li>
+               </ul>
+        </header>
+        <main id="vsebina">
+            <header id="glava_vsebine">
+                <div id="slogan"></div>
+                <div id="Tabela">
+                    <h2 id="dobrodošli">Dobrodošli</h2>
+                    <ul id="list">
+                        <li>Glasba</li>
+                        <br>
+                        <li>Filmi</li>
+                        <br>
+                        <li>Serije</li>
+                        <br>
+                        <li>In več!</li>
+                    </ul>
+                </div>
+            </header>
+            <article id="video_section">
+                <header>
+                    <div id="art_header">
+                        <h2>Kaj Ponuja MyVibe</h2>
+                        <p>Imamo najnovejšo glasbo, filme in tudi serije. Brezplačno!</p>
+                    </div>
+                </header>
+                <section id="video_trailer">
+                    <div id="video_trailer_1">
+                        <video controls src="video-kratki/Shingeki no Kyojin - Attack On Titan Season 1  IMDb.mp4" class="trailer" poster="slike/AOT.jpg"></video>
+                        <video controls src="video-kratki/Dexter - Dexter Dexter  IMDb.mp4" class="trailer" poster="slike/Dexter.png"></video>
+                    </div>
+                    <div id="video_trailer_2">
+                        <video controls src="video-kratki/Kriva pota - Say My Name  IMDb.mp4" class="trailer" poster="slike/Breaking_Bad.jpg"></video>
+                        <video controls src="video-kratki/Better Call Saul - Extended Season 1 Trailer  IMDb.mp4" class="trailer" poster="slike/better-call-saul-trailer.jpg"></video>
+                    </div>
+                </section>
+            </article>
+        </main>
+        <footer id="noga">
+            <p>Avtor: <span class="copy" onclick="copy_ime()">Nik Purgar</span></p>
+            <p>Telefonska številka: <span class="copy" onclick="copy_st()">031 613 220</span></p>
+            <p>Gmail: <span class="copy" onclick="copy_mail()">myvibe2007@gmail.com</span></p>
+        </footer>
+    </body>
+    <script src="style.js"></script>
+</html>
